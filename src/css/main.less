@@ -1,0 +1,59 @@
+@f: #fff;
+@o: #FA6700;
+@d: #252525;
+@g: #00E9BF;
+@gr: #C4C4C4;
+@pad: 21.094%;
+
+@font-face{
+    font-family: 'Gilroy';
+    src: url('/assets/font/Gilroy-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Gilroy';
+    src: url('/assets/font/Gilroy-Extrabold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.G {
+    font-family: 'Gilroy', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    word-break: break-word;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: @f;
+    color: @d;
+    .G;
+}
+
+.main {
+
+}
+
+
+@media only screen and (max-width: 1400px) {
+    @pad: 10.094%;
+    .heading {
+        font-size: 48px;
+    }
+}
+
+
+@import 'header';
+@import 'about';
+@import 'stuck';
+@import 'contact';

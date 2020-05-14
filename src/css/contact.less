@@ -1,0 +1,76 @@
+.contact {
+  background-image: url(/assets/img/contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h2 {
+    font-size: 40px;
+    color: @d;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  form {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  input {
+    width: 44%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #d8d8d8;
+    margin-bottom: 50px;
+  }
+
+  .message {
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #d8d8d8;
+  }
+
+  button {
+    margin:0 auto 100px;
+    color: @d;
+    background-color: @o;
+    border: none;
+    padding: 5px 15px;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.7s;
+
+    &:hover {
+      color: #fff;
+      transform: scale(1.1);
+    }
+  }
+
+  .error {
+    width: 100%;
+    text-align: center;
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    input {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .contact {
+    h2 {
+      padding: 100px 10px 0;
+    }
+  }
+}
